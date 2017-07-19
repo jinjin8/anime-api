@@ -14,27 +14,27 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-19T16:02:27-07:00">2017-07-19T16:02:27-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-19T16:05:22-07:00">2017-07-19T16:05:22-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">84.74%</span></span>
+    (<span class="covered_percent"><span class="yellow">82.81%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         3.02
+         2.95
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>30</b> files in total.
-    <b>190</b> relevant lines. 
-    <span class="green"><b>161</b> lines covered</span> and
-    <span class="red"><b>29</b> lines missed </span>
+    <b>192</b> relevant lines. 
+    <span class="green"><b>159</b> lines covered</span> and
+    <span class="red"><b>33</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -312,12 +312,12 @@
       
       <tr>
         <td class="strong"><a href="#05f7f8db1e91b615f86202e2dec7b811d464c61c" class="src_link" title="spec/requests/paginate_cartoon_spec.rb">spec/requests/paginate_cartoon_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>16</td>
-        <td>9</td>
-        <td>9</td>
-        <td>0</td>
-        <td>1.7</td>
+        <td class="red strong">63.64 %</td>
+        <td>19</td>
+        <td>11</td>
+        <td>7</td>
+        <td>4</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
@@ -3263,11 +3263,11 @@
         <div class="source_table" id="05f7f8db1e91b615f86202e2dec7b811d464c61c">
   <div class="header">
     <h3>spec/requests/paginate_cartoon_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">63.64 %</span> covered</h4>
     <div>
-      <b>9</b> relevant lines. 
-      <span class="green"><b>9</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>11</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
     </div>
   </div>
   
@@ -3292,79 +3292,97 @@
           <code class="ruby">describe &quot;get all cartoons route&quot;, :type =&gt; :request do</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="4">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
           
-          <code class="ruby">  before { Cartoon.destroy_all }</code>
+          <code class="ruby">  before do</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="5">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
           
-          <code class="ruby">  let!(:cartoons) { FactoryGirl.create_list(:cartoon, 20)}</code>
+          <code class="ruby">    Cartoon.destroy_all</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">    let!(:cartoons) do</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="7">
-          <span class="hits">3</span>
+        <li class="missed" data-hits="0" data-linenumber="7">
           
-          <code class="ruby">  before { get &#39;/cartoons/page/1&#39;}</code>
+          
+          <code class="ruby">      FactoryGirl.create_list(:cartoon, 20)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="9">
           
-          <code class="ruby">  it &#39;returns all cartoons&#39; do</code>
+          
+          <code class="ruby">    get &#39;/cartoons/page/1&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="10">
           
-          <code class="ruby">    expect(JSON.parse(response.body).size).to eq(5)</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
+        <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">  it &#39;returns status code 200&#39; do</code>
+          <code class="ruby">  it &#39;returns all cartoons&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="13">
           
-          <code class="ruby">    expect(response).to have_http_status(:success)</code>
+          
+          <code class="ruby">    expect(JSON.parse(response.body).size).to eq(5)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;returns status code 200&#39; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
+          
+          <code class="ruby">    expect(response).to have_http_status(:success)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">end</code>
