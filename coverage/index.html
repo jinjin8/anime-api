@@ -14,7 +14,7 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-19T09:45:11-07:00">2017-07-19T09:45:11-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-19T10:32:25-07:00">2017-07-19T10:32:25-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -31,9 +31,9 @@
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>18</b> files in total.
-    <b>64</b> relevant lines. 
-    <span class="green"><b>64</b> lines covered</span> and
+    <b>19</b> files in total.
+    <b>66</b> relevant lines. 
+    <span class="green"><b>66</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -52,6 +52,16 @@
       
       <tr>
         <td class="strong"><a href="#292c593029c4c561513bfa90dc2f425c33642849" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#6fcb718237a120a23e9086536f4dac7fef824150" class="src_link" title="app/models/cartoon.rb">app/models/cartoon.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>2</td>
@@ -191,7 +201,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#eea386cca6c1c3ca91054182fcd4cde406f95d60" class="src_link" title="spec/models/anime_spec.rb">spec/models/anime_spec.rb</a></td>
+        <td class="strong"><a href="#c9fde6601c7f028eb8d1d3c2a823dbf3fe8b9260" class="src_link" title="spec/models/cartoon_spec.rb">spec/models/cartoon_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>5</td>
         <td>3</td>
@@ -283,6 +293,43 @@
 </div>
 
       
+        <div class="source_table" id="6fcb718237a120a23e9086536f4dac7fef824150">
+  <div class="header">
+    <h3>app/models/cartoon.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Cartoon &lt; ApplicationRecord</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :characters</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="b528e9e350f874d42b8fadf1982beeb941ce4cd8">
   <div class="header">
     <h3>app/models/character.rb</h3>
@@ -306,7 +353,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  belongs_to :anime</code>
+          <code class="ruby">  belongs_to :cartoon</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
@@ -1452,7 +1499,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  resources :anime do</code>
+          <code class="ruby">  resources :cartoons do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
@@ -1478,9 +1525,9 @@
 </div>
 
       
-        <div class="source_table" id="eea386cca6c1c3ca91054182fcd4cde406f95d60">
+        <div class="source_table" id="c9fde6601c7f028eb8d1d3c2a823dbf3fe8b9260">
   <div class="header">
-    <h3>spec/models/anime_spec.rb</h3>
+    <h3>spec/models/cartoon_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>3</b> relevant lines. 
@@ -1507,7 +1554,7 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">describe Anime do</code>
+          <code class="ruby">describe Cartoon do</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="4">
@@ -1562,7 +1609,7 @@
         <li class="covered" data-hits="2" data-linenumber="4">
           <span class="hits">2</span>
           
-          <code class="ruby">  it { should belong_to :anime }</code>
+          <code class="ruby">  it { should belong_to :cartoon }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
