@@ -5,6 +5,12 @@ class CharactersController < ApplicationController
     json_response(@characters)
   end
 
+  def by_name
+    @cartoon = Cartoon.find(params[:cartoon_id])
+    @characters = @cartoon.characters.by_name(params[:name])
+    json_response(@characters)
+  end
+
   def show
     @cartoon = Cartoon.find(params[:cartoon_id])
     @character = Character.find(params[:id])
@@ -33,7 +39,7 @@ class CharactersController < ApplicationController
       render status: 200, json: {
         message: "Burned!"
       }
-    end  
+    end
   end
 
   private
