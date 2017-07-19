@@ -114,6 +114,9 @@ GEM
     rack (2.0.3)
     rack-test (0.6.3)
       rack (>= 1.0)
+    rack-throttle (0.5.0)
+      bundler (>= 1.0.0)
+      rack (>= 1.0.0)
     rails (5.1.2)
       actioncable (= 5.1.2)
       actionmailer (= 5.1.2)
@@ -205,6 +208,7 @@ DEPENDENCIES
   pg (~> 0.18)
   pry
   puma (~> 3.7)
+  rack-throttle (~> 0.5.0)
   rails (~> 5.1.2)
   rspec-rails
   shoulda-callback-matchers
