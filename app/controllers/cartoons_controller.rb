@@ -1,6 +1,6 @@
 class CartoonsController < ApplicationController
   def index
-    @cartoons = Cartoon.all
+    @cartoons = Cartoon.all.page params[:page]
     json_response(@cartoons)
   end
 
