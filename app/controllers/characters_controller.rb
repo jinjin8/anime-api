@@ -1,7 +1,7 @@
 class CharactersController < ApplicationController
   def index
     @cartoon = Cartoon.find(params[:cartoon_id])
-    @characters = @cartoon.characters
+    @characters = @cartoon.characters.page params[:page]
     json_response(@characters)
   end
 
