@@ -6,6 +6,7 @@
         null,
         1,
         2,
+        2,
         null
       ],
       "/Users/Guest/Desktop/anime/spec/rails_helper.rb": [
@@ -94,6 +95,7 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         null,
@@ -105,6 +107,8 @@
         1,
         null,
         1,
+        1,
+        null,
         null,
         null,
         null,
@@ -225,6 +229,20 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/anime/config/initializers/kaminari_config.rb": [
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/Guest/Desktop/anime/config/initializers/mime_types.rb": [
         null,
         null,
@@ -239,10 +257,24 @@
         null,
         null,
         1,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/anime/spec/factories.rb": [
+        1,
+        null,
+        1,
         1,
         null,
         null,
-        null,
+        1,
+        1,
+        1,
         null,
         null,
         null
@@ -251,6 +283,11 @@
         1,
         1,
         1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null,
         null
       ],
@@ -260,6 +297,7 @@
         null
       ],
       "/Users/Guest/Desktop/anime/app/models/cartoon.rb": [
+        1,
         1,
         1,
         null
@@ -274,14 +312,101 @@
         null,
         1,
         2,
+        2,
+        2,
         null
       ],
       "/Users/Guest/Desktop/anime/app/models/character.rb": [
         1,
         1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/anime/spec/requests/throttle_spec.rb": [
+        1,
+        2,
+        null,
+        1,
+        1,
+        101,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/anime/app/controllers/cartoons_controller.rb": [
+        1,
+        1,
+        100,
+        100,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/anime/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/anime/app/controllers/concerns/response.rb": [
+        1,
+        1,
+        100,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/anime/app/serializers/cartoon_serializer.rb": [
+        1,
+        1,
         null
       ]
     },
-    "timestamp": 1500485545
+    "timestamp": 1500501455
   }
 }
