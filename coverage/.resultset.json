@@ -334,6 +334,19 @@
         1,
         null
       ],
+      "/Users/Guest/Desktop/anime-api/spec/requests/delete_cartoon_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/anime-api/spec/requests/get_cartoons_spec.rb": [
         1,
         null,
@@ -513,8 +526,8 @@
         null,
         null,
         1,
-        1,
-        1,
+        2,
+        2,
         null,
         null,
         1,
@@ -532,9 +545,9 @@
         null,
         null,
         1,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
         null,
         null,
@@ -563,7 +576,7 @@
       "/Users/Guest/Desktop/anime-api/app/controllers/concerns/response.rb": [
         1,
         1,
-        16,
+        17,
         null,
         null
       ],
@@ -630,6 +643,6 @@
         null
       ]
     },
-    "timestamp": 1500574890
+    "timestamp": 1500575323
   }
 }
