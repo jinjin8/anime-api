@@ -60,3 +60,10 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 ```
 Copyright (c) 2017 Jin Camou and Nicky Santamaria
 ```
+
+## Cartoons Path
+![Cartoon](public/images/cartoon.png)
+## Characters Path
+![Character](public/images/characters.png)
+## Search Path
+![Search](public/images/search.png)
