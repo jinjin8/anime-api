@@ -397,6 +397,17 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/anime-api/spec/requests/not_found_exception_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/anime-api/spec/requests/paginate_cartoon_spec.rb": [
         1,
         null,
@@ -552,7 +563,7 @@
         null,
         null,
         1,
-        2,
+        3,
         2,
         null,
         null,
@@ -591,7 +602,7 @@
         1,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
@@ -602,7 +613,7 @@
       "/Users/Guest/Desktop/anime-api/app/controllers/concerns/response.rb": [
         1,
         1,
-        19,
+        20,
         null,
         null
       ],
@@ -669,6 +680,6 @@
         null
       ]
     },
-    "timestamp": 1500575723
+    "timestamp": 1500575889
   }
 }
