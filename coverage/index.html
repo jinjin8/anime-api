@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.1/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.1/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.1/favicon_yellow.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.1/favicon_green.png" />
     <link rel="icon" type="image/png" href="./assets/0.10.1/favicon.png" />
   </head>
   
@@ -14,27 +14,27 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-20T10:07:09-07:00">2017-07-20T10:07:09-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-20T10:13:58-07:00">2017-07-20T10:13:58-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">89.87%</span></span>
+    (<span class="covered_percent"><span class="green">91.98%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.79
+         2.74
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>34</b> files in total.
-    <b>227</b> relevant lines. 
-    <span class="green"><b>204</b> lines covered</span> and
-    <span class="red"><b>23</b> lines missed </span>
+    <b>35</b> files in total.
+    <b>237</b> relevant lines. 
+    <span class="green"><b>218</b> lines covered</span> and
+    <span class="red"><b>19</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -67,17 +67,17 @@
         <td>21</td>
         <td>13</td>
         <td>8</td>
-        <td>9.4</td>
+        <td>9.2</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#1a1329d3024d3113f875d776891bf0c81d9be7a4" class="src_link" title="app/controllers/characters_controller.rb">app/controllers/characters_controller.rb</a></td>
-        <td class="red strong">51.72 %</td>
+        <td class="red strong">65.52 %</td>
         <td>49</td>
         <td>29</td>
-        <td>15</td>
-        <td>14</td>
-        <td>0.9</td>
+        <td>19</td>
+        <td>10</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -361,6 +361,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#2ca12d2afec70e04a3135150a997ac502dc5845c" class="src_link" title="spec/requests/post_character_spec.rb">spec/requests/post_character_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>17</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>1.3</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#cf0410068d3d57bcf61aac9e0f0933a8d139348d" class="src_link" title="spec/requests/serialization_spec.rb">spec/requests/serialization_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>18</td>
@@ -517,14 +527,14 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="92" data-linenumber="3">
-          <span class="hits">92</span>
+        <li class="covered" data-hits="90" data-linenumber="3">
+          <span class="hits">90</span>
           
           <code class="ruby">    @cartoons = Cartoon.all.page params[:page]</code>
         </li>
       
-        <li class="covered" data-hits="92" data-linenumber="4">
-          <span class="hits">92</span>
+        <li class="covered" data-hits="90" data-linenumber="4">
+          <span class="hits">90</span>
           
           <code class="ruby">    json_response(@cartoons)</code>
         </li>
@@ -753,11 +763,11 @@
         <div class="source_table" id="1a1329d3024d3113f875d776891bf0c81d9be7a4">
   <div class="header">
     <h3>app/controllers/characters_controller.rb</h3>
-    <h4><span class="red">51.72 %</span> covered</h4>
+    <h4><span class="red">65.52 %</span> covered</h4>
     <div>
       <b>29</b> relevant lines. 
-      <span class="green"><b>15</b> lines covered</span> and
-      <span class="red"><b>14</b> lines missed.</span>
+      <span class="green"><b>19</b> lines covered</span> and
+      <span class="red"><b>10</b> lines missed.</span>
     </div>
   </div>
   
@@ -884,20 +894,20 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="21">
-          
+        <li class="covered" data-hits="2" data-linenumber="21">
+          <span class="hits">2</span>
           
           <code class="ruby">    @cartoon = Cartoon.find(params[:cartoon_id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="22">
-          
+        <li class="covered" data-hits="2" data-linenumber="22">
+          <span class="hits">2</span>
           
           <code class="ruby">    @character = @cartoon.characters.create!(character_params)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="23">
-          
+        <li class="covered" data-hits="2" data-linenumber="23">
+          <span class="hits">2</span>
           
           <code class="ruby">    json_response(@character, :created)</code>
         </li>
@@ -1040,8 +1050,8 @@
           <code class="ruby">  def character_params</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="47">
-          
+        <li class="covered" data-hits="2" data-linenumber="47">
+          <span class="hits">2</span>
           
           <code class="ruby">    params.permit(:name, :powers, :cartoon_id)</code>
         </li>
@@ -3871,6 +3881,127 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="2ca12d2afec70e04a3135150a997ac502dc5845c">
+  <div class="header">
+    <h3>spec/requests/post_character_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;post a characters route&quot;, :type =&gt; :request do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    Cartoon.destroy_all</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    cartoon = FactoryGirl.create(:cartoon)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="7">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    post &quot;/cartoons/#{cartoon.id}/characters&quot;, params: { :name =&gt; &#39;Lisa Simpson&#39;, :powers =&gt; &#39;{Saxaphone}&#39; }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;returns character&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(JSON.parse(response.body)[&#39;name&#39;]).to eq(&#39;Lisa Simpson&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;returns status code 200&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(response).to have_http_status(:success)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">end</code>
