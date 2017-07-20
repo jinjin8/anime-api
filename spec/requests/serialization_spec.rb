@@ -9,7 +9,6 @@ describe "it shows cartoon name when a request is made for getting characters", 
   end
 
   it 'returns cartoon name for that character' do
-    binding.pry
     expect(JSON.parse(response.body)["cartoon"]["name"]).to eq("Sailor Moon")
   end
 
