@@ -275,7 +275,7 @@
         1,
         null,
         1,
-        4,
+        6,
         null,
         null,
         null,
@@ -342,6 +342,25 @@
         3,
         null,
         3,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/anime-api/spec/requests/get_characters_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        2,
+        null,
         null,
         1,
         1,
@@ -444,8 +463,8 @@
       "/Users/Guest/Desktop/anime-api/app/controllers/cartoons_controller.rb": [
         1,
         1,
-        94,
-        94,
+        92,
+        92,
         null,
         null,
         1,
@@ -511,9 +530,9 @@
       "/Users/Guest/Desktop/anime-api/app/controllers/characters_controller.rb": [
         1,
         1,
-        2,
-        2,
-        2,
+        4,
+        4,
+        4,
         null,
         null,
         1,
@@ -566,6 +585,6 @@
         null
       ]
     },
-    "timestamp": 1500570264
+    "timestamp": 1500570429
   }
 }
