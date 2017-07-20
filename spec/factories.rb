@@ -13,7 +13,7 @@ FactoryGirl.define do
   end
 
   factory :character do
-    name('Sailor Jupiter')
+    name('Felix')
     powers('{Supreme Thunder, Supreme Thunder Crash}')
     cartoon
   end
