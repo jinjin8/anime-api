@@ -13,7 +13,7 @@ class CharactersController < ApplicationController
 
   def show
     @cartoon = Cartoon.find(params[:cartoon_id])
-    @character = Character.find(params[:id])
+    @character = @cartoon.characters.find(params[:id])
     json_response(@character)
   end
 
