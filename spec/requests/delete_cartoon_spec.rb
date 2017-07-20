@@ -6,6 +6,6 @@ describe "the delete cartoon route", :type => :request do
   it 'returns a deleted status' do
     get "/cartoons/#{cartoon.id}"
     delete "/cartoons/#{cartoon.id}"
-    expect((response)).to have_http_status(200)
+    expect(response).to have_http_status(200)
   end
 end
