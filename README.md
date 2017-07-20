@@ -25,11 +25,13 @@ An api that will return a list of characters for different cartoons. It will let
 * `$ cd anime-api`
 
 ## PostgreSQL Integration
+
 * `$ postgres`
 * `$ rake db:create`
 * `$ rake db:migrate db:test:prepare`
 
 ## Seed database
+
 * `$ rake db:seed`
 
 ## Development server
